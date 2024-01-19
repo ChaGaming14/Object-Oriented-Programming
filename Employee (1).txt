@@ -1,0 +1,32 @@
+package com.mycompany.employee;
+
+    public class Employee {
+    
+        int idNum;
+        String eName;
+        static String company = "TNTS";
+        
+        Employee(int id, String en){
+            idNum = id;
+            eName = en;
+        }
+        void display(){
+            System.out.println(idNum + eName);
+            System.out.println(company);
+        }
+        
+        static void change(){
+            company = "SMC";
+        }
+        public static void main(String [] args){
+            Employee.change();
+            
+            Employee e1 = new Employee(123, "Ace");
+            Employee e2 = new Employee(456, "Gobrin");
+            Employee e3 = new Employee(789, "Rey");
+            e1.display();
+            e2.display();
+            e3.display();
+        }
+}
+

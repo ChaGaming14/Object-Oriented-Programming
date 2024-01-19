@@ -1,0 +1,31 @@
+ */
+
+package com.mycompany.rectangleareacalculator;
+
+/**
+ *
+ * @author COMLAB504
+ */
+import java.util.Scanner;
+
+public class RectangleAreaCalculator {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        RectangleAreaCalculator calc = new RectangleAreaCalculator();
+        
+        double length, width ;
+        
+        System.out.print( "Input the Length: " );
+        length = sc.nextDouble();
+        System.out.print( "Input the Width: " );
+        width = sc.nextDouble();
+        
+        double result = calc.calculatorAreaRec(length, width);
+        System.out.println(result);
+        
+    }
+        public static double calculatorAreaRec(double length, double width){
+            return length*width;
+        }
+}

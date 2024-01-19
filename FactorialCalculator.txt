@@ -1,0 +1,33 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
+
+package com.mycompany.factorialcalculator;
+
+/**
+ *
+ * @author COMLAB504
+ */
+
+public class FactorialCalculator {
+    public static void main(String[] args) {
+        
+        
+        int number = 1;
+        int result = CalculatorFactorial(number);
+        
+        System.out.print(result);
+        }
+        public static int CalculatorFactorial(int n){
+            if(n<0){
+            throw new IllegalArgumentException("INVALID");
+            }
+            int Factorial = 1;
+                    for (int i=1; i<n; i++){
+                        Factorial *= 1;
+                        
+                    }
+                    return Factorial;
+    }
+}

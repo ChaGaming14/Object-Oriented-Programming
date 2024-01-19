@@ -1,0 +1,41 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
+
+package com.mycompany.square;
+
+/**
+ *
+ * @author COMLAB504
+ */
+  public class Square {
+
+public void testSquare(){
+
+System.out.printf("Square of an integer is %d\n", square(9));
+
+System.out.printf("Square of a double is %f\n", square(9.5));
+
+}
+
+public int square(int intValue){
+
+System.out.printf("Called square with int argument: %d\n", intValue);
+
+return intValue * intValue;
+
+}
+
+public double square(double doubleValue){
+
+return doubleValue * doubleValue;
+
+}
+
+public static void main(String[] args){
+
+Square sqr = new Square();
+sqr.testSquare();
+}
+}

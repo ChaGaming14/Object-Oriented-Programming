@@ -1,0 +1,54 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
+
+package com.mycompany.student;
+
+/**
+ *
+ * @author COMLAB504
+ */
+// This is a Java class that represents a student.
+public class Student {
+
+    // The student's name.
+    private String name;
+
+    // The student's age.
+    private int age;
+
+    // Default constructor that sets the student's name and age to default values.
+    public Student() {
+        name = "No name yet,";
+        age = 0;
+    }
+
+    // Parameterized constructor that takes a name and age as parameters.
+    public Student(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+
+    // Main method to test the functionality of the Student class.
+    public static void main(String[] args){ 
+        // Create a new Student object without any parameters.
+        Student s1 = new Student();
+
+        // Print the name and age of the new student.
+        System.out.println(s1.name + "," + s1.age);
+        
+        // Set the name and age of the new student.
+        s1.name = "Cha Gaming";
+        s1.age = 14;
+        
+        // Print the name and age of the new student after changing the values.
+        System.out.println(s1.name + "," + s1.age);
+
+        // Create a new Student object with a name and age.
+        Student s2 = new Student("Charess Babolat", 27);
+
+        // Print the name and age of the second student.
+        System.out.println(s1.name + "," + s2.age);
+    }
+}

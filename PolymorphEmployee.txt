@@ -1,0 +1,23 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.sti.polymorphemployee;
+
+/**
+ *
+ * @author Bryn
+ */
+public class PolymorphEmployee {
+        
+        
+    public static void main(String[] args) {
+        
+     Salary s = new Salary("Tina Lee", "Q.C PH", 2, 256800.00);
+     Employee e = new Salary ("Ace Alvaro", "Manila PH", 7, 137400);
+     System.out.println("Call mailCheck using Slary reference --");
+     s.mailCheck();
+     e.mailCheck();
+        
+    }
+}

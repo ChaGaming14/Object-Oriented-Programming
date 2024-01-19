@@ -1,0 +1,60 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+ 
+ public class MachineProblem {
+     
+     public static void main(String[] args) {
+     
+     int[] primeNumber = new int[5];
+     
+     primeNumber [0] = 2;
+     primeNumber [1] = 3;
+     primeNumber [2] = 5;
+     primeNumber [3] = 7;
+     primeNumber [4] = 11;
+     
+     System.out.println("The first prime number is "  +  primeNumber [0]);
+      ArrayList<String>names = new ArrayList<String>();
+     
+     names.add("Ezekiel");
+     names.add("Aeron");
+     names.add("Anthony");
+     names.add("Kareem");
+     
+     System.out.println("My friends are: " + names);
+     
+     names.set(0,"Asher cheater");
+     names.remove(3);
+     
+     System.out.println(names);
+     
+     HashMap<String,Integer> Things = new HashMap<String,Integer>();
+     Things.put("Mobile phone", 10000);
+     Things.put("Computer", 25000);
+     Things.put("Tablet", 1500);
+     Things.put("Earphones", 500);
+     
+    System.out.println("The Price of our gadgets is : " + Things);
+     
+     
+     Things.replace("Tablet", 1555);
+     Things.remove("Earphones");
+     
+      for (String m : Things.keySet()) {
+     System.out.println("Our updated price for : " + Things + m);
+     }
+    
+     int i, j;
+     for(i=0; i<5; i++) {
+         for(j=0; j<=i; j++){
+     
+     
+       System.out.print("* ");
+         }
+       System.out.println();
+         
+     
+   }
+  }
+ } 

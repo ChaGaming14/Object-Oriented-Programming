@@ -1,0 +1,37 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
+
+package com.mycompany.employee2;
+
+/**
+ *
+ * @author COMLAB504
+ */
+public class Employee2 {
+    
+        int idNum;
+        String eName;
+        
+        static String company = "TNTS";
+        
+        Employee2(int id, String en){
+            idNum = id;
+            eName = en;
+        }
+        void display(){
+            
+            System.out.println(idNum + " " + eName);
+            System.out.println(company);
+        }
+       
+                     
+        public static void main(String [] args){
+            
+            Employee2 e1 = new Employee2(123, "Ace");
+            Employee2 e2 = new Employee2(456, "Gobrin");
+            e1.display();
+            e2.display();
+        }
+}

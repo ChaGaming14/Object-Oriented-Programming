@@ -1,0 +1,26 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
+
+package com.mycompany.reportcardtest;
+
+/**
+ *
+ * @author COMLAB504
+ */
+import java.util.Scanner;
+public class ReportCardTest {
+    public static void main(String []args){
+        
+        Scanner sc = new Scanner(System.in);
+        
+        ReportCard myR = new ReportCard();
+        
+        System.out.print("Please enter the Grade level: ");
+        
+        String gradeLevel = sc.nextLine();
+        
+        myR.displayMessage(gradeLevel);
+    }
+}

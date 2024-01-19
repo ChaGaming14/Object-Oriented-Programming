@@ -1,0 +1,40 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.sti.abstractdemo;
+
+
+// create an abstract class called A
+abstract class A{
+    //create an abstract method call callme
+    abstract void callme(); 
+    //define a method call callmetoo
+    void callmetoo(){
+        //print the values of concrete method
+        System.out.println("This is a concrete method");
+    }
+}
+
+//create an class called B
+class B extends A{
+    //call the method call callme
+    void callme(){
+        //print the value of the Implementation of B
+        System.out.println("B is implementation of callme");
+    }
+
+}
+
+//create an abstract called AbstractDemo
+class AbstractDemo {
+    //define the main method
+    public static void main(String[] args) {
+        //print the Hello world
+        System.out.println("Hello World!");
+        //instanciate the class B and the method callme and callemetoo
+        B b = new B();
+        b.callme();
+        b.callmetoo();
+    }
+}

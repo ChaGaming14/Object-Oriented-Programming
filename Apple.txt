@@ -1,0 +1,25 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.sti.implementation;
+
+//create an class called Apple that extends Fruit
+public class Apple extends Fruit {
+    //declare an string Apple
+    Apple(){
+        //print the Sub class default constructor
+        System.out.println("Sub class default constructor !");
+    }
+    //declare a main method name Apple
+    Apple(String arg1){
+        //print the Sub class parameterized constructor
+        System.out.println("Sub class parameterized constructor :" + arg1);
+    }
+    
+    //declare an class name Apple , Apple
+    Apple(String arg1, String arg2){
+        //print the Sub class parameterized constructor + argl + "and" + arg2
+        System.out.println("Sub class parameterized constructor :" + arg1 + "and" + arg2);
+    }
+}

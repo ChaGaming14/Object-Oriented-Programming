@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Arrays {
+    
+    public static void main (String[] args) {
+        
+        int[]Array = {1, 2, 3, 4, 5};
+        String[][]classroom = new String[3][3];
+        
+        classroom[0][0] = "Deguzman";
+        classroom[0][1] = "De latore";
+        classroom[0][2] = "De lizo";
+        
+        classroom[1][0] = "Lumagbas";
+        classroom[1][1] = "Magno";
+        classroom[1][2] = "Ralar";
+        
+        classroom[2][0] = "Velasco";
+        classroom[2][1] = "Pastolero";
+        classroom[2][2] = "Julits";
+        
+        System.out.println(classroom[0][1]);
+        
+        ArrayList<String>student = new ArrayList<String>();
+        
+        student.add("Gerwin");
+        student.add("Eric");
+        student.get(0);
+        student.set(0,"Suliman");
+        student.get(0);
+        student.remove(1);
+        student.clear();
+        
+        
+        System.out.print(student.size());
+    }
+}

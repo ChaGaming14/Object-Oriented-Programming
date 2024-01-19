@@ -1,0 +1,55 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
+
+package com.mycompany.chaindemo;
+
+/**
+ *
+ * @author COMLAB504
+ */
+// This is a Java class that demonstrates method chaining.
+public class ChainDemo {
+
+    // Declare three private String attributes: c1, c2, and c3.
+    private String c1;
+    private String c2;
+    private String c3;
+
+    // Create a constructor with three parameters: c1, c2, and c3.
+    public ChainDemo(String c1, String c2, String c3){
+        // Set the value of each attribute to the corresponding parameter value.
+        this.c1 = c1;
+        this.c2 = c2;
+        this.c3 = c3;
+    }
+
+    // Create a parameterized constructor with two parameters: c1 and c2.
+    public ChainDemo(String c1, String c2) {
+        // Call the three-parameter constructor with the first two parameters.
+        this(c1, c2, "Hey");
+    }
+
+    // Create a parameterized constructor with one parameter: c1.
+    public ChainDemo(String c1) {
+        // Call the two-parameter constructor with the first parameter.
+        this(c1, "Hi");
+        
+    }
+
+    // Create a method called display that prints the values of c1, c2, and c3.
+    public void display(){
+        // Print the values of c1, c2, and c3.
+        System.out.print(c1 + " " + c2 + " " + c3);
+    }
+
+    // Create a main method to test the functionality of the ChainDemo class.
+    public static void main(String[] args){
+        // Create a new ChainDemo object with one parameter: "Hello".
+        ChainDemo cd = new ChainDemo("Hello");
+
+        // Call the display method on the cd object.
+        cd.display();
+    }
+}

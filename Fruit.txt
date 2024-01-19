@@ -1,0 +1,25 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.sti.implementation;
+
+//create a class called Fruit
+public class Fruit {
+    //declare an string name Fruit
+    Fruit(){
+        //print the Super class default constructor
+        System.out.println("Super class default constructor!");
+    }
+    //declare the Super class parameterized constructor + argl
+    Fruit(String arg1){
+        //print the Super class parameterized constructor
+        System.out.println("Super class parameterized constructor:" + arg1);
+    }
+    //declare a String arg1, String name arg2 called Fruit
+    Fruit(String arg1, String arg2){
+        //print the Super class parameterized constructor + arg1 + "and" + arg2
+        System.out.println("Super class parameterized constructor" + arg1 + "and " + arg2);
+        
+    }
+}

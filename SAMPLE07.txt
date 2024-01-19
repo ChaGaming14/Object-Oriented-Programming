@@ -1,0 +1,59 @@
+import java.util.Scanner;
+/**
+ *
+ * @author COMLAB504
+ */
+public class SAMPLE07 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        String sName, Class = "";
+        int idNum;
+        double hCom;
+        
+      do {  
+        
+        System.out.println("Student name:");
+        sName = sc.nextLine();
+        
+      } while(sName.length() <2 || sName.length() >20);
+      
+      do{
+          System.out.println("Student number: 234 to 537");
+          idNum = sc.nextInt () ;
+          
+      } while (idNum <234 || idNum >537) ;
+      
+      do {
+            System.out.println ("Hours Completed: 0 to 250 ") ;
+            hCom = sc.nextDouble () ;
+        } while (hCom <0 || hCom >250);
+       
+        if (hCom < 30) {
+           
+        System.out.println ("Class =  Freshmen") ;
+             
+        }
+       
+        else if (hCom >=30 && hCom <=59.9) {
+        System.out.println ("Class = Sophomore" ) ;
+       
+        }
+       
+        else if (hCom >=60 && hCom <=89.9){
+        System.out.println (" Class = Junior ") ;
+       
+        }
+       
+        else if (hCom >=90) {
+        System.out.println ("Class = Senior") ;
+           
+        }
+           
+        else {
+             System.out.println ("Not Applicable: ") ;
+        }
+        
+    }
+} 

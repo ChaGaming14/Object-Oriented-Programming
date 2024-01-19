@@ -1,0 +1,16 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.sti.implementation;
+
+//declare a classa called Implementation
+public class Implementation { 
+    //declare a main method
+    public static void main(String[] args) {
+        //create three object name apple , apple1, apple2
+        Apple apple = new Apple();
+        Apple apple1 = new Apple("Argument1");
+        Apple apple2 = new Apple("Argument1", "Argument2");
+    }
+}
